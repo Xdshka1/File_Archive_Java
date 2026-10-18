@@ -7,7 +7,4 @@ public class ArchiveNotFoundException extends BusinessException{
         super("Архив с id = " + id + " не найден");
     }
 
-    public ArchiveNotFoundException(String title){
-        super("Архив с наименованием = " + title + " не найден");
-    }
 }

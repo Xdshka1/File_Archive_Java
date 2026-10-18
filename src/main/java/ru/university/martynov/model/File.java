@@ -9,13 +9,6 @@ public class File {
     private String path;
     private long sizeBytes;
 
-    public File(String name, String path, long sizeBytes) {
-        this.id = UUID.randomUUID();
-        this.name = name;
-        this.path = path;
-        this.sizeBytes = sizeBytes;
-    }
-
     public File(UUID id, String name, String path, long sizeBytes) {
         this.id = id;
         this.name = name;
@@ -35,23 +28,14 @@ public class File {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getPath() {
         return path;
     }
 
-    public void setPath(String path) {
-        this.path = path;
-    }
 
     public long getSizeBytes() {
         return sizeBytes;
     }
 
-    public void setSizeBytes(long sizeBytes) {
-        this.sizeBytes = sizeBytes;
-    }
 }
